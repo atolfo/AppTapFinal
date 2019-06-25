@@ -65,8 +65,7 @@ export default class Main extends Component {
     renderItem = ({ item }) => (
         <View style={styles.reciboContainer}>
             <Text style={styles.reciboName}>{item.name}</Text>
-            <Text style={styles.reciboValue}>{item.value}</Text>
-            <Text style={styles.reciboDescription}>{item.description}</Text>
+          
 
             <TouchableOpacity
                 style={styles.button}
