@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3001/AppAMF'
+    baseURL: 'https://appadriantolfo.herokuapp.com/App'
 });
 
 export default api;

@@ -50,7 +50,7 @@ export default class Main extends Component {
                 {
                     text: 'Sim',
                     onPress: () => {
-                        fetch(`https://testefelipe123.herokuapp.com/AppAMF/recibos/${id}`, {
+                        fetch(`https://appadriantolfo.herokuapp.com/App/recibos/${id}`, {
                             method: "delete"
                         }).then(data => {
                             if (data.ok) {
