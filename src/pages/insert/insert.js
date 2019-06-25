@@ -27,7 +27,7 @@ export default class Insert extends Component {
     };
 
     InsertRecordsToServer = () => {
-        fetch('http://localhost:3001/AppAMF/recibos', {
+        fetch('https://appadriantolfo.herokuapp.com/App/recibos', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',

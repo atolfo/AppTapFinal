@@ -25,7 +25,7 @@ export default class Update extends Component {
 
     UpdateRecordsToServer = () => {
         const { navigation } = this.props;
-        fetch(`http://localhost:3001/AppAMF/recibos/${navigation.state.params.recibo._id}`, {
+        fetch(`https://appadriantolfo.herokuapp.com/App/recibos/${navigation.state.params.recibo._id}`, {
             method: 'put',
             headers: {
                 'Content-Type': 'application/json',

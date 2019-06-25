@@ -12,10 +12,12 @@
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
     "react-native-datepicker": "^1.7.2",
-    "react-navigation": "2.18.3"
+    "react-navigation": "2.18.3",
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {
-    "babel-preset-expo": "^5.0.0"
+    "babel-preset-expo": "^5.0.0",
+    "nodemon": "^1.19.1"
   },
   "private": true
 }
