@@ -21,39 +21,40 @@ const styles = StyleSheet.create({
     reciboName: {
         fontSize: 18,
         fontWeight: "bold",
-        color: "#333"
+        color: "#333",
+        lineHeight: 20
     },
   
     reciboDate: {
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 24
+        lineHeight: 20
     },
 
     reciboEndereco: {
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 24
+        lineHeight: 20
     },
     reciboEmail: {
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 24
+        lineHeight: 20
     },
     reciboPhone: {
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 24
+        lineHeight: 20
     },
     reciboDescription: {
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 24
+        lineHeight: 20
     },
     button: {
         height: 42,
