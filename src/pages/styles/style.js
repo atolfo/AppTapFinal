@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         color: "#333",
         marginTop: 5,
-        lineHeight: 20
+        lineHeight: 15
     },
 
     reciboEndereco: {
