@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
         width:"100%",
         borderColor: "#DDD",
         borderRadius: 15,
-        padding: 20,
+        padding: 15,
         marginBottom: 20
     },
     reciboName: {

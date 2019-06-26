@@ -129,13 +129,13 @@ export default class Insert extends Component {
                     <TouchableOpacity 
                          style={styles.button} 
                          onPress={this.InsertRecordsToServer} 
-                         onPress={() => this.props.navigation.push('Main')}>
-                        <Text style={styles.buttonText}> Registrar Evento! </Text>
+                         onPress={() => this.props.navigation.navigate('Main')}>
+                        <Text style={styles.buttonText}> Registrar Evento </Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => this.props.navigation.push('Main')}>
+                        onPress={() => this.props.navigation.navigate('Main')}>
                         <Text style={styles.buttonText}>Voltar</Text>
                     </TouchableOpacity>
 

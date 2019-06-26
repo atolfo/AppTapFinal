@@ -72,7 +72,7 @@ export default class Main extends Component {
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
-                    this.props.navigation.navigate('Details', { recibo: item })
+                    this.props.navigation.push('Details', { recibo: item })
                 }}>
                 <Text style={styles.buttonText}>Detalhes</Text>
             </TouchableOpacity>
@@ -80,7 +80,7 @@ export default class Main extends Component {
             <TouchableOpacity
                 style={styles.button}
                 onPress={() => {
-                    this.props.navigation.navigate('Update', { recibo: item })
+                    this.props.navigation.push('Update', { recibo: item })
                 }}>
                 <Text style={styles.buttonText}>Editar</Text>
             </TouchableOpacity>
@@ -101,7 +101,7 @@ export default class Main extends Component {
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {
-                            this.props.navigation.navigate('Insert')
+                            this.props.navigation.push('Insert')
                         }}>
                         <Text style={styles.buttonText}>Registre seu Evento</Text>
                     </TouchableOpacity>

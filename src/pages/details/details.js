@@ -102,7 +102,7 @@ export default class Details extends Component {
 
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() =>  this.props.navigation.push('Main')}>
+                        onPress={() =>  this.props.navigation.navigate('Main')}>
                         <Text style={styles.buttonText}>Back</Text>
                     </TouchableOpacity>
 
