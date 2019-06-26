@@ -9,6 +9,13 @@ const styles = StyleSheet.create({
     list: {
         padding: 20
     },
+    backgroundImage: {
+        flex: 1,
+        width: null,
+        height: null,
+        backgroundColor: "#212926",
+        resizeMode: 'cover'
+    },
     reciboContainer: {
         backgroundColor: "#FFF",
         borderWidth: 1,

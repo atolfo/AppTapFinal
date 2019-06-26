@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import { View, Text, FlatList, Alert, TouchableOpacity, StyleSheet } from "react-native";
+import { Image,Dimensions,ImageBackground,View, Text, FlatList, Alert, TouchableOpacity, StyleSheet } from "react-native";
 import api from '../../services/services';
 import styles from '../styles/style';
 
+let {height,width}=Dimensions.get('window')
+
 export default class Main extends Component {
     static navigationOptions = {
-        title: "Eventos OffRoad"
+        title: "Off-Road"
     };
  
     state = {
@@ -54,7 +56,7 @@ export default class Main extends Component {
                             method: "delete"
                         }).then(data => {
                             if (data.ok) {
-                                this.props.navigation.push('Main');
+                                this.props.navigation.navigate('Main');
                             }
                         })
                     }
@@ -96,6 +98,11 @@ export default class Main extends Component {
 
     render() {
         return (
+            <View style={styles.backgroundImage}>
+
+            <ImageBackground source={require('../img/background/blackyellowbg.jpeg')}>
+                  {this.props.children}
+             </ImageBackground>       
             <View style={styles.container}>
                 <View>
                     <TouchableOpacity
@@ -115,6 +122,7 @@ export default class Main extends Component {
                     onEndReachedThreshold={0.1}
                 />
             </View>
+         </View>
         );
     }
 }
