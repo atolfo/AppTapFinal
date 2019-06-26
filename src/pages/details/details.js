@@ -27,8 +27,9 @@ export default class Details extends Component {
     }
 
     render() {
-
+        
         return (
+            <ImageBackground source={require('../img/background/blackyellowbg.jpg')}  style={styles.backgroundImage} >
             <View style={styles.container}>
                 <View>
                     <View>
@@ -111,6 +112,7 @@ export default class Details extends Component {
                 </View>
 
             </View>
+            </ImageBackground>
         )
     }
 }

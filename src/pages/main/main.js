@@ -98,11 +98,8 @@ export default class Main extends Component {
 
     render() {
         return (
-            <View style={styles.backgroundImage}>
-
-            <ImageBackground source={require('../img/background/blackyellowbg.jpeg')}>
-                  {this.props.children}
-             </ImageBackground>       
+          <ImageBackground source={require('../img/background/blackyellowbg.jpg')}  style={styles.backgroundImage} >
+                             
             <View style={styles.container}>
                 <View>
                     <TouchableOpacity
@@ -122,7 +119,7 @@ export default class Main extends Component {
                     onEndReachedThreshold={0.1}
                 />
             </View>
-         </View>
+          </ImageBackground>
         );
     }
 }

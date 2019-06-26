@@ -57,6 +57,7 @@ export default class Insert extends Component {
 
     render() {
         return (
+            
             <View style={styles.container} onCancel={() => this.props.history.push('/')}>
 
                 <View>
@@ -142,6 +143,7 @@ export default class Insert extends Component {
                 </View>
 
             </View>
+            
         )
     }
 }

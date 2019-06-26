@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: "#212926"
+        backgroundColor: "transparent"
     },
     list: {
         padding: 20
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         resizeMode: 'cover'
     },
     reciboContainer: {
-        backgroundColor: "#FFF",
+        backgroundColor: 'rgba(255,255,255,1)',
         borderWidth: 1,
         width:"100%",
         borderColor: "#DDD",
