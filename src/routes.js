@@ -9,7 +9,7 @@ export default createStackNavigator({
     Main: {
         screen: Main,
         navigationOptions: {
-          title: 'Main',
+          title: 'Eventos',
           headerStyle: { backgroundColor: '#fec503' },
           headerTintColor: '#212926',
         },
@@ -17,7 +17,7 @@ export default createStackNavigator({
       Details: {
         screen: Details,
         navigationOptions: {
-          title: 'Details',
+          title: 'Detalhes',
           headerStyle: { backgroundColor: '#fec503' },
           headerTintColor: '#212926',
         },
@@ -25,7 +25,7 @@ export default createStackNavigator({
       Insert: {
         screen: Insert,
         navigationOptions: {
-          title: 'Insert',
+          title: 'Inserir',
           headerStyle: { backgroundColor: '#fec503' },
           headerTintColor: '#212926',
         },
@@ -33,7 +33,7 @@ export default createStackNavigator({
       Update: {
         screen: Update,
         navigationOptions: {
-          title: 'Update',
+          title: 'Atualizar',
           headerStyle: { backgroundColor: '#fec503' },
           headerTintColor: '#212926',
         },
