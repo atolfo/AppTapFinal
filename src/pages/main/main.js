@@ -85,7 +85,9 @@ export default class Main extends Component {
                 <Text style={styles.buttonText}>Editar</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={() => this.DeleteRecordsToServer(item._id)}  >
+            <TouchableOpacity 
+                style={styles.button} 
+                onPress={() => this.DeleteRecordsToServer(item._id)}  >
                 <Text style={styles.buttonText}> Excluir </Text>
             </TouchableOpacity>
 
