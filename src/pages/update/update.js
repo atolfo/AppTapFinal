@@ -115,7 +115,10 @@ export default class Update extends Component {
                 </View>
 
                 <View>
-                    <TouchableOpacity style={styles.button} onPress={this.UpdateRecordsToServer} >
+                    <TouchableOpacity
+                         style={styles.button}
+                         onPress={this.UpdateRecordsToServer}
+                         onPress={() => this.props.navigation.push('Main')} >
                         <Text style={styles.buttonText}> Atualizar </Text>
                     </TouchableOpacity>
 
