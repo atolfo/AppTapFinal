@@ -119,25 +119,25 @@ export default class Insert extends Component {
                         />
                     </View>
                     <View>
-                        <Text style={styles.textcolorwhite}>Description</Text>
+                        <Text style={styles.textcolorDarkGrey}>Descrição</Text>
                         <TextInput style={styles.reciboContainer}
-                            placeholder='Insert description'
+                            placeholder='Descrição do Evento'
                             onChangeText={description => this.setState({ description })}
                         />
                     </View>
                 </View>
                 <View>
                     <TouchableOpacity 
-                         style={styles.button} 
+                         style={styles.insertButton} 
                          onPress={this.InsertRecordsToServer} 
                          onPress={() => this.props.navigation.navigate('Main')}>
-                        <Text style={styles.buttonText}> Registrar Evento </Text>
+                        <Text style={styles.insertButtonText}> Registrar Evento </Text>
                     </TouchableOpacity>
 
                     <TouchableOpacity
-                        style={styles.button}
+                        style={styles.insertButton}
                         onPress={() => this.props.navigation.navigate('Main')}>
-                        <Text style={styles.buttonText}>Voltar</Text>
+                        <Text style={styles.insertButtonText}>Voltar</Text>
                     </TouchableOpacity>
 
                 </View>

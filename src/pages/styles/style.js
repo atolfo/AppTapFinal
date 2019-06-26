@@ -63,6 +63,16 @@ const styles = StyleSheet.create({
         marginTop: 5,
         lineHeight: 20
     },
+    insertButton: {
+        height: 42,
+        borderRadius: 5,
+        borderWidth: 2,
+        borderColor: "#212926",
+        backgroundColor: "transparent",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 5
+    },
     button: {
         height: 42,
         borderRadius: 5,
@@ -73,12 +83,20 @@ const styles = StyleSheet.create({
         alignItems: "center",
         marginTop: 5
     },
+    insertButtonText: {
+        fontSize: 16,
+        color: "#212926",
+        fontWeight: "bold"
+    },
     buttonText: {
         fontSize: 16,
         color: "#fec503",
         fontWeight: "bold"
     },
+    textcolorDarkGrey: {
+        color: '#212926',
 
+    },
     textcolorwhite: {
         color: 'white',
 
