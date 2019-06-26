@@ -72,11 +72,12 @@ export default class Insert extends Component {
                         <DatePicker
                             ref={this.datepicker}
                             style={styles.reciboContainer}
-                            date={this.state.date}
-                            mode="date"
+                            selected={this.state.startDate}
+                            onChange={this.handleChange}
+                            mode="datetime"
                             placeholder="Data do Evento"
                             format="DD-MM-YYYY"
-                            minDate="01-01-2019"
+                            minDate="01-01-2018"
                             maxDate="01-01-2030"
                             confirmBtnText="Confirmar"
                             cancelBtnText="Cancelar"
@@ -89,11 +90,9 @@ export default class Insert extends Component {
                                 marginLeft: 0
                             },
                             dateInput: {
-                                
                                 marginLeft: 36
                             }
-                            // ... You can check the source to find the other keys.
-                            }}
+                        }}
                             onDateChange={(date) => {this.setState({date: date})}}
                         />
                     </View>
@@ -141,7 +140,6 @@ export default class Insert extends Component {
                     </TouchableOpacity>
 
                 </View>
-
             </View>
             </ImageBackground>
         )
