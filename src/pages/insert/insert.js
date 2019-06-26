@@ -1,6 +1,6 @@
 import React, { Component, createRef } from "react";
 import DatePicker from 'react-native-datepicker';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, Image, ImageBackground } from 'react-native';
 import styles from '../styles/style';
 
 
@@ -57,7 +57,7 @@ export default class Insert extends Component {
 
     render() {
         return (
-            
+            <ImageBackground source={require('../img/background/blackyellowbg.jpg')}  style={styles.backgroundImage} >
             <View style={styles.container} onCancel={() => this.props.history.push('/')}>
 
                 <View>
@@ -143,7 +143,7 @@ export default class Insert extends Component {
                 </View>
 
             </View>
-            
+            </ImageBackground>
         )
     }
 }

@@ -105,7 +105,7 @@ export default class Main extends Component {
                     <TouchableOpacity
                         style={styles.button}
                         onPress={() => {
-                            this.props.navigation.push('Insert')
+                            this.props.navigation.navigate('Insert')
                         }}>
                         <Text style={styles.buttonText}>Registre seu Evento</Text>
                     </TouchableOpacity>
